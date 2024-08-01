@@ -1,6 +1,6 @@
 class Bird {
 
-    private readonly gravity = -8.0;
+    private readonly gravity = -4.0;
 
     private verticalVelocity = 0;
 
