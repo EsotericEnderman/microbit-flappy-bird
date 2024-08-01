@@ -11,9 +11,13 @@ class Pipe {
     }
 
     public update() {
+        if (bird.isGameOver) {
+            return;
+        }
+
         for (const square of this.squares) {
             if (bird.xLocation === square.x && bird.yLocation === square.y) {
-                gameOver();
+                bird.gameOver();
             }
 
             square.x -= 1/500;

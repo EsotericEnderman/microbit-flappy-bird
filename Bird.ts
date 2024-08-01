@@ -7,6 +7,8 @@ class Bird {
     private x = 1;
     private y = 2;
 
+    public isGameOver = false;
+
     get xLocation() {
         return this.x
     }
@@ -27,7 +29,7 @@ class Bird {
         this.draw();
 
         if (this.y > maxY || this.y < minY) {
-            gameOver();
+            this.gameOver();
         }
     }
 
@@ -37,6 +39,14 @@ class Bird {
 
     public dive() {
         this.verticalVelocity = -5.0;
+    }
+
+    public gameOver() {
+        this.isGameOver = true;
+    
+        Pipe.pipes = [];
+    
+        basic.showString("GAME OVER");
     }
 
     private draw() {

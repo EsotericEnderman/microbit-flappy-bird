@@ -9,13 +9,5 @@ let update = () => {
     }
 }
 
-function gameOver() {
-    update = () => {};
-
-    Pipe.pipes = [];
-
-    basic.showString("GAME OVER");
-}
-
 loops.everyInterval(1, update);
 loops.everyInterval(8000, Pipe.spawnPipe);
