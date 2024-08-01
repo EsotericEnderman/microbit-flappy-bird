@@ -1,7 +1,14 @@
 const bird = new Bird();
 
-let update = () => {
+Pipe.beginSpawningPipes();
+
+const update = () => {
+    if (bird.isGameOver) {
+        return;
+    }
+
     basic.clearScreen();
+
     bird.update();
 
     for (const pipe of Pipe.pipes) {
@@ -10,4 +17,3 @@ let update = () => {
 }
 
 loops.everyInterval(1, update);
-loops.everyInterval(8000, Pipe.spawnPipe);

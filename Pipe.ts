@@ -39,6 +39,10 @@ class Pipe {
         }
     }
 
+    public static beginSpawningPipes() {
+        loops.everyInterval(8000, () => Pipe.spawnPipe());
+    }
+
     public static spawnPipe() {
         const squareLocations = [new Square(4, 0), new Square(4, 1), new Square(4, 2), new Square(4, 3), new Square(4, 4)];
 
