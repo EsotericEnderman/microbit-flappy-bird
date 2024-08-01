@@ -15,7 +15,10 @@ class Bird {
         return this.y;
     }
 
-    public constructor() { }
+    public constructor() {
+        input.onButtonPressed(Button.A, () => bird.jump());
+        input.onButtonPressed(Button.B, () => bird.dive());
+    }
 
     public update() {
         this.verticalVelocity += this.gravity * 1 / 1000;

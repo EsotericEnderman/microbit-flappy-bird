@@ -1,8 +1,5 @@
 const bird = new Bird();
 
-input.onButtonPressed(Button.A, () => bird.jump());
-input.onButtonPressed(Button.B, () => bird.dive());
-
 let update = () => {
     basic.clearScreen();
     bird.update();
