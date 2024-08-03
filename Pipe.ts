@@ -16,7 +16,7 @@ class Pipe {
         }
 
         for (const square of this.squares) {
-            if (bird.xLocation === square.x && bird.yLocation === square.y) {
+            if (Math.abs(bird.xLocation - square.x) < 0.1 && Math.abs(bird.yLocation - square.y) < 0.1) {
                 bird.gameOver();
             }
 
