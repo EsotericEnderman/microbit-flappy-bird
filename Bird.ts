@@ -4,6 +4,9 @@ class Bird {
 
     private verticalVelocity = 0;
 
+    private jumpVelocity = 5;
+    private diveVelocity = -5;
+
     private x = 1;
     private y = 2;
 
@@ -34,11 +37,11 @@ class Bird {
     }
 
     public jump() {
-        this.verticalVelocity = 5.0;
+        this.verticalVelocity = this.jumpVelocity;
     }
 
     public dive() {
-        this.verticalVelocity = -5.0;
+        this.verticalVelocity = this.diveVelocity;
     }
 
     public gameOver() {
