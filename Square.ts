@@ -1,4 +1,5 @@
 class Square {
+
     public x: number;
     public y: number;
 
