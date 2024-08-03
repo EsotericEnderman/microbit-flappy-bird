@@ -46,9 +46,9 @@ class Bird {
 
     public gameOver() {
         this.isGameOver = true;
-    
+
         Pipe.pipes = [];
-    
+
         basic.showString("GAME OVER");
     }
 

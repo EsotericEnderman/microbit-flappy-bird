@@ -61,7 +61,7 @@ class Pipe {
         let squaresToRemove = 2 + Math.floor(Math.random() * 3);
 
         while (squaresToRemove != 0 && indexToRemove >= 0 && indexToRemove < squareLocations.length) {
-            indexToRemove+=direction;
+            indexToRemove += direction;
             squareLocations.splice(indexToRemove, 1);
 
             squaresToRemove--;
