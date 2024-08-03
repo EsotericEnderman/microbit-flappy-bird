@@ -46,9 +46,9 @@ class Pipe {
     public static spawnPipe() {
         const squareLocations = [new Square(4, 0), new Square(4, 1), new Square(4, 2), new Square(4, 3), new Square(4, 4)];
 
-        let indexToRemove = Math.floor(Math.random() * squareLocations.length);
+        let indexToRemove = 1 + Math.floor(Math.random() * (squareLocations.length - 2));
         let direction = Math.random() >= 0.5 ? 1 : -1;
-        let squaresToRemove = 1 + Math.floor(Math.random() * 4);
+        let squaresToRemove = 2 + Math.floor(Math.random() * 3);
 
         while (squaresToRemove != 0 && indexToRemove >= 0 && indexToRemove < squareLocations.length) {
             indexToRemove+=direction;
