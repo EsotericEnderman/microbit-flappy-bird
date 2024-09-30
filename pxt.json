@@ -7,12 +7,12 @@
         "microphone": "*"
     },
     "files": [
-        "src/main.ts",
-        "README.md",
-        "src/classes/Square.ts",
         "src/constants.ts",
+        "src/classes/Pipe.ts",
+        "src/classes/Square.ts",
         "src/classes/Bird.ts",
-        "src/classes/Pipe.ts"
+        "src/main.ts",
+        "README.md"
     ],
     "targetVersions": {
         "target": "6.0.28",
