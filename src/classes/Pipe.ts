@@ -56,7 +56,9 @@ class Pipe {
             squareLocations.push(new Square(pipeXLocations, y));
         }
 
-        let indexToRemove = 1 + Math.floor(Math.random() * (squareLocations.length - 2));
+        const randomNumber = Math.random();
+
+        let indexToRemove = randomNumber <= 1 / 3 ? 1 : (randomNumber <= 2 / 3 ? 2 : 3);
         let direction = Math.random() >= 0.5 ? 1 : -1;
         let squaresToRemove = 2 + Math.floor(Math.random() * 3);
 
