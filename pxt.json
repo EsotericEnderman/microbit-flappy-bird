@@ -2,9 +2,7 @@
     "name": "microbit-flappy-bird",
     "description": "A Flappy Bird game on a microbit.",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
         "src/constants.ts",
