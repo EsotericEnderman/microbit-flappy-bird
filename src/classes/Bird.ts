@@ -31,7 +31,7 @@ class Bird {
 
         this.draw();
 
-        if (this.y > maxY || this.y < minY) {
+        if (this.y > maxY + 2 || this.y < minY - 2) {
             this.gameOver();
         }
     }
