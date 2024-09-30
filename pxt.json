@@ -1,6 +1,6 @@
 {
     "name": "microbit-flappy-bird",
-    "description": "",
+    "description": "A Flappy Bird game on a microbit.",
     "dependencies": {
         "core": "*",
         "radio": "*",
